@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(530deg, #65c6ff 10%, #f1f1cf 80%);
+    color: white;
+    min-height: 100vh;
+  }
+  #map{
+    width: 100%;
+    height: 40%;
+    position:absolute;
+    margin-top: 20px;
+    padding: 15rem;
+    
+       
+  }
+  
+  header,
+  form {
+    position:relative;
+    min-height: 0vh;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+  form input,
+  form button {
+    padding: 1.8rem;
+    font-size: 1.3rem;
+    border: none;
+    background: #ddd6fa;
+  }
+  form button {
+    color: #ffffff;
+    background: rgb(247, 147, 185);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #f32da7;
+    color: white;
+  }
+
+  .todo-container{
+    display: flex;
+  align-items: center;
+  /*  justify-content: center;*/
+  }
+  .todo-list{
+    min-width: 30%;
+    list-style: none;
+  }
+
+.todo{
+  margin: 0.5rem;
+  background-color:aliceblue;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease;  /*動畫*/
+}
+
+.todo li {
+  flex: 1;
+}
+  
+.trash-btn,
+.complete-btn {
+  background: #ecb270;
+  color: white;
+  border: none; /*顏色去邊*/
+  padding: 1rem;
+  cursor: pointer;  /*滑鼠指標模式*/
+  font-size: 1rem;
+}
+.complete-btn {
+  background: rgb(169, 235, 95);
+}
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;  /*一槓斜線*/
+  opacity: 0.5;  /* 透明度*/
+}
+
+.fall {
+  transform:  translate(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+
+/* RWD 開始*/
+@media screen and (min-width:768px){
+  .menu_btn{display: none;}
+  .header{display: flex;
+        justify-content: space-between;
+        background-color: #282923;
+        align-items: center;
+
+    }
+  nav{
+      position: relative;
+      left: 0;
+      display: flex;
+      width: auto;
+      height: auto;
+      top: 0px;
+      background-color: transparent;
+
+  }
+  
+  #map{
+    width: 50%;
+    height: 100%;
+    bottom: 10px;
+    position:absolute;
+    right: 0;  
+  }
+  
+
+  body {
+    background-image: linear-gradient(530deg, #65c6ff 10%, #f1f1cf 80%);
+    color: white;
+    min-height: 100vh;
+  }
+ 
+  
+  header,
+  form {
+    position:relative;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  form input,
+  form button {
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    border: none;
+    background: #ddd6fa;
+  }
+  form button {
+    color: #ffffff;
+    background: rgb(247, 147, 185);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #f32da7;
+    color: white;
+  }
+
+  .todo-container{
+    display: flex;
+  align-items: center;
+  /*  justify-content: center;*/
+  }
+  .todo-list{
+    min-width: 30%;
+    list-style: none;
+  }
+
+.todo{
+  margin: 0.5rem;
+  background-color:aliceblue;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease;  /*動畫*/
+}
+
+.todo li {
+  flex: 1;
+}
+  
+.trash-btn,
+.complete-btn {
+  background: #ecb270;
+  color: white;
+  border: none; /*顏色去邊*/
+  padding: 1rem;
+  cursor: pointer;  /*滑鼠指標模式*/
+  font-size: 1rem;
+}
+.complete-btn {
+  background: rgb(169, 235, 95);
+}
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;  /*一槓斜線*/
+  opacity: 0.5;  /* 透明度*/
+}
+
+.fall {
+  transform:  translate(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+}

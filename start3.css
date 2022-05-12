@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body {
+    font-family: "ROBOTO", sans-serif;
+  }
+   
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(120deg, #1e1f26 10%, #9380e9 90%);
+    text-align: center;
+    padding: 0 2em;
+  }
+
+  .nav h1{
+    font-size: 6.5vw;
+    letter-spacing: 0.25rem;
+    color:paleturquoise;
+    margin: 0;
+    transition: all 0.3s ease;  /* 動畫延遲0.3秒*/
+   /* z-index: 3;  疊層顯示*/  
+  }
+  h1:hover{
+    transform: translate3d(0, -15px, 22px);
+      color: rebeccapurple;
+  }
+  h3.span{
+      color: honeydew;
+      font-size: 2vw;
+      letter-spacing: 0.15rem;
+      font-weight: 300;
+      /*    z-index: 4;  */
+  }
+  span:hover{
+      color:magenta;
+      font-weight: 450;
+      font-size: 2.2vw;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  #github{
+    display: flex;  
+    width: 100%;
+    height: 80px;
+
+  }
+   
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 20px 20px 50px rgba(122, 8, 253, 0.5);
+    background: #02072b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+
+
+    /*z-index: 10;  */
+    /*transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);  */
+  }
+  .nav-container--top-first {
+    position: fixed;
+    top: 75px;
+    /*transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);*/
+  }
+  
+  .nav-tab{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex:1;
+      color: #03dac6;
+      letter-spacing: 0.1rem;
+    font-size: 1.8vw;
+    /*transition: all 0.5s ease;
+*/
+  }
+  .nav-tab:hover {
+    color: hwb(78 32% 1%);
+    background: #2669fa;
+    /*transition: all 0.5s ease;
+  */
+}
+
+  .loader span {
+    color: #15ffeb;
+    text-shadow: 0 0 0 #d80505;
+    animation: loading 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes loading {
+    to {
+      text-shadow: 50px 0 70px #f4d6ff;
+      color: #0a75a0;
+    }
+  }
+  .loader span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .loader span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .loader span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .loader span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .loader span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .loader span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .loader span:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  .loader span:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  
+  .loader span:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  .loader span:nth-child(11) {
+    animation-delay: 1s;
+  }
+  .loader span:nth-child(12) {
+    animation-delay: 1.1s;
+  }
+  .loader span:nth-child(13) {
+    animation-delay: 1.2s;
+  }
+  .loader span:nth-child(14) {
+    animation-delay: 1.3s;
+  }
+  .loader span:nth-child(15) {
+    animation-delay: 1.4s;
+  }
+  .loader span:nth-child(16) {
+    animation-delay: 1.5s;
+  }
+  .loader span:nth-child(17) {
+   animation-delay: 1.6s;
+  }
+  .loader span:nth-child(18) {
+    animation-delay: 1.7s;
+  }
+  .loader span:nth-child(19) {
+    animation-delay: 1.8s;
+  }
+  .loader span:nth-child(20) {
+    animation-delay: 1.9s;
+  }
+  .loader span:nth-child(21) {
+    animation-delay: 2s;
+  }
+  .loader span:nth-child(22) {
+    animation-delay: 2.1s;
+  }
+
+  
+  /*RWD 排版開始*/
+
+ 
